@@ -17,6 +17,14 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 11;
+if (votingAge >= 18){
+ 
+  console.log('True')
+} else {
+  console.log('try again')
+}
+
 
 
 
