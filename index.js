@@ -38,6 +38,14 @@ Do the following:
 
    HINT: no function required
 */
+let car1= 7;
+let car2= 5;
+if (car1>=car2){
+  car1 = car2 +car1;
+  console.log(car1)
+} else {
+  console.log('try again')
+}
 
 
 
@@ -53,6 +61,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let newVar = '1999';
+    newVar = 1999;
+    console.log(newVar);
 
 
 
@@ -66,10 +77,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+   return a*b;
   }
-
+  console.log(multiply(3,5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
