@@ -93,9 +93,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanAge){
+    return humanAge * 7;
 }
+console.log(dogYears(3));
 
 
 
@@ -173,10 +174,23 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
     /*add your code here*/
+   
+let Scissors = 3;
+let Paper = 2;
+let Rock = 1;
+let computer = Math.floor(Math.random()*3)+1;
+
+function game(user, computer){
+  if(computer === user){
+    return ("it's a tie")
+  } else if ( user=== Scissors && computer === Paper || user === Paper && computer === Rock || user === Rock && computer ===Scissors){
+    return ("you win!")
+  }else if ( user === Scissors && computer === Rock || user === Paper && computer === Scissors || user === Rock && computer === Paper){
+    return ("you lose")
+  }
 }
-  
+  console.log(game(Scissors,computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -190,8 +204,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(kilometers){
     /*add your code here*/
+    miles = kilometers * .621371;
+    return miles;
   }
 
 
