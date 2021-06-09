@@ -297,9 +297,20 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+function vowelCounter(str) {
+  var count = 0;
+  var vowels = 'aeiouAEIOU';
+  for (var i = 0 ; i < str.length; i++){
+    if (vowels.indexOf(str[i].toLowerCase()) > -1) {
+    count++;
+    }
+  }
+  return count;
     /*add your code here*/
+
 }
+
+vowelCounter("Anything string");
 
 
 
